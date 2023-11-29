@@ -7,17 +7,17 @@ void main() {
 }
 
 class Celebrare extends StatelessWidget {
-  const Celebrare({super.key});
+  const Celebrare({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return (MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: "splashScreen",
+      initialRoute: "splashScreen", // Use lowercase 'splashScreen'
       routes: {
-        "splashScreen": (context) => const splashscreen(),
-        "home": (context) => home(),
+        "splashScreen": (context) => const Splashscreen(),
+        "home": (context) => Home(),
       },
-    ));
+    );
   }
 }
