@@ -17,7 +17,7 @@ class _pageState extends State<page> {
             borderRadius: BorderRadius.all(Radius.circular(15)),
             color: const Color.fromARGB(255, 255, 238, 187)),
         width: 400,
-        height: 500,
+        height: 480,
         // ,
       ),
     );
